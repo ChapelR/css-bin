@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name           FextraSimple
+@description    A simplified, more readable fextralife wiki.
+@namespace      twinelab.net
+@version        1.0.0
+@author         Chapel
+@homepageURL    github.com/chapel/css-bin
+@supportURL     github.com/chapel/css-bin/issues
+@license        unlicense
+==/UserStyle== */
+
+@-moz-document domain("wiki.fextralife.com") {
+    body {
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+    }
+    @media only screen and (min-width: 1200px) {
+        p {
+            font-size: 16px;
+        }
+    }
+    .fex-main,
+    p {
+        color: #eee;
+    }
+    #wrapper {
+        padding-left: 0;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 4em;
+    }
+    #sidebar-wrapper {
+        display: none;
+        width: 0;
+    }
+    .fex-bg-image {
+        background: #333;
+    }
+    #form-header {
+        display: none;
+    }
+}
