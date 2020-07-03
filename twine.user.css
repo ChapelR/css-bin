@@ -1,0 +1,84 @@
+/* ==UserStyle==
+@name           TwineSlick
+@description    A slick UI for Twine.
+@namespace      twinelab.net
+@version        1.0.0
+@author         Chapel
+@license        unlicense
+==/UserStyle== */
+
+@-moz-document url-prefix("https://twinery.org/2/#!/stories") {
+    #storyEditView .toolbar.main {
+        bottom: unset;
+        top: 0;
+        opacity: 0.3;
+    }
+    
+    #storyEditView .toolbar.main:hover {
+        opacity: 1;
+    }
+    
+    .drop.drop-open.drop-pinned {
+        display: block;
+        top: 45px !important;
+    }
+    
+    .fa-caret-up {
+        transform: scaleY(-1);
+    }
+    
+    .fa-lg {
+        vertical-align: -20%;
+    }
+    
+    #storyEditView .passage {
+        padding: 0;
+        width: 135px !important;
+        height: 135px !important;
+        opacity: 0.8;
+    }
+    
+    #storyEditView .passage:hover {
+        opacity: 1;
+    }
+    
+    #storyEditView .passage.selected {
+        background: #fafafa;
+        box-shadow: 0 0 4px #888;
+    }
+    
+    .frame {
+        height: 100%;
+    }
+    
+    #storyEditView .excerpt {
+        padding: 0.2em 0.5em;
+    }
+    
+    #storyEditView .passage .title {
+        border-bottom: 1px solid #333;
+        background: #333;
+        color: #f5f5f5;
+        padding: 0.33em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    #modal-overlay {
+        background: rgba(0,0,0,0.6);
+    }
+    
+    .modal-dialog.editor {
+        background: #eee;
+    }
+    
+    .CodeMirror-gutter.CodeMirror-linenumbers {
+        background: #eee;
+    }
+    
+    .expand {
+        background: #fafafa;
+    }
+}
